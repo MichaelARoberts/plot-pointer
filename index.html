@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
+	<link href='https://fonts.googleapis.com/css?family=Roboto' rel='stylesheet' type='text/css'>
+	<meta charset="UTF-8">
+  </head>
+
+  <body>
+	<div id="sidebar">
+		<form action="javascript:onsubmit=addMarker()">
+
+      <h3> Latitude </h3>
+			<input type="text" id="lat" name="lat" autocomplete="off">
+
+			<h3> Longitude </h3>
+			<input type="text" id="lng" name="lng" autocomplete="off">
+
+      <input type="submit" value="Add Marker">
+		</form>
+
+		<hr></hr>
+
+    <div id="coords"></div>
+
+	</div>
+  <div id="map"></div>
+
+    <script type="text/javascript" src="https://code.jquery.com/jquery-1.10.2.js"></script>
+    <script type="text/javascript" src="./js/map.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCckln5oYGQcbZtxYFNSkcKXGddUKJKSIQ&callback=initMap"></script>
+  </body>
+</html>
